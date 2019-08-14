@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "509840950203",
+    "firebase_url": "https://coraapp-eba76.firebaseio.com",
+    "project_id": "coraapp-eba76",
+    "storage_bucket": "coraapp-eba76.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509840950203:android:0063fcc018a630e7",
+        "android_client_info": {
+          "package_name": "com.example.coraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509840950203-ahpq6qjs3accjoblpbnr2higpcrjtvdj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.coraapp",
+            "certificate_hash": "00e7669cba397a55a980111bfe12f85ad360ca14"
+          }
+        },
+        {
+          "client_id": "509840950203-qvaaes0v5122qit9tb86t7d85hbte107.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNsJXiMw01ygvfPJPrAv4Fd8U-SozOOPA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509840950203-qvaaes0v5122qit9tb86t7d85hbte107.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
