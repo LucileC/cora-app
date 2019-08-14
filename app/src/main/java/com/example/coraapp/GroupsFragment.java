@@ -1,14 +1,17 @@
 package com.example.coraapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import android.telephony.mbms.GroupCall;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -54,6 +57,16 @@ public class GroupsFragment extends Fragment {
         InitializeFields();
 
         RetrieveAndDisplayGroups();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
+                String currentGroupName = adapterView.getItemAtPosition(position).toString();
+                Intent groupChatIntent = new Intent(getContext(), GroupChatActivity.class);//getContext() --> because it's a fragment and not and activity
+                groupChatIntent.putExtra("groupName", currentGroupName);
+                startActivity(groupChatIntent);
+            }
+        });
 
         return groupFragmentView;
     }
